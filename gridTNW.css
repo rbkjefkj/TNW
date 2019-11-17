@@ -1,0 +1,53 @@
+/*#test-grid-container {
+    display: grid;
+    grid-template-columns: 106px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "a a" "b b";
+}
+
+#a { background-color: yellow; grid-area: a; display: flex; }
+#b { background-color: green; grid-area: b; display: flex; }
+#c { background-color: red; grid-area: c; display: none; }
+
+@media (max-width: 1023px) {
+    #c { display: flex; }
+    #test-grid-container {
+        grid-template-areas:
+            "c a"
+            "c b";
+    }
+}*/
+
+
+header {
+    display: grid;
+    grid-template-columns: 106px auto; 
+    grid-template-rows: auto auto; /*auto makes row height fit the row's content*/       
+    grid-template-areas:
+        "black black"
+        "white white";
+}
+
+#black-header { background-color: darkgrey; /*display: flex;*/ grid-area: black; }
+#white-header { background-color: aliceblue; /*display: flex;*/ grid-area: white; } 
+ul, li { display: inline; }
+
+#TNW-small { 
+    display: none;
+    background-color: red;
+    grid-area: red;
+}
+
+#black-1st-nav {  }
+#black-2nd-nav { margin: 0 0 0 auto; padding-right: 40px; }
+
+#search-icon { background-color: green; width: 20px; height: auto; margin: 0 0 0 auto; } 
+
+@media (max-width: 1023px) {
+    #TNW-small { display: block; }
+    header {
+        grid-template-areas:
+            "red black"
+            "red white";
+    }
+}
