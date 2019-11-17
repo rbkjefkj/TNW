@@ -1,0 +1,47 @@
+/*header {
+    display: flex;
+    flex-direction: column;
+}*/
+
+#TNW-red-small {
+    display: flex;
+    width: 60px;
+    height: 102px;
+    background-color: red;
+}
+
+#black-header {
+    display: flex;
+    width: 100%;
+    background-color: darkgrey;
+    
+}
+
+#white-header {
+    display: flex;
+    width: 100%;
+    border: solid 1px black;
+}
+
+ul, li { display: inline; }
+
+#black-1st-nav {
+    display: flex;
+}
+
+#black-2nd-nav { 
+    display: flex;
+    margin: 0 0 0 auto;
+    padding-right: 40px;
+}
+
+#white-nav {
+    display: flex;
+}
+
+#search-icon {
+    margin: 0 0 0 auto;
+    width: 52px;
+    height: 52px;
+    background-color: grey;
+}
