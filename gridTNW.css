@@ -10,12 +10,18 @@ header {
 }
 
 #black-header { background: #131313; display: flex; grid-area: black; }
-#white-header { background-color: aliceblue; display: flex; grid-area: white; }
+#white-header {
+    background-color: white;
+    display: flex;
+    grid-area: white;
+    box-shadow: 0 0 32px rgba(0,0,0,.15);
+}
  
 ul { display: flex; margin: 0; list-style-type: none; }
 #white-ul { padding-left: 8px; }
 
 #TNW-small {
+    position: relative;
     box-sizing: border-box; 
     display: none;
     background-color: #f42;
@@ -28,6 +34,16 @@ ul { display: flex; margin: 0; list-style-type: none; }
     /*GIVE THIS TO EVERYONE IN NEED AT THE VERY END cursor: pointer;*/
 }
 
+#TNW-small img {
+    display: block;
+    height: 16px;
+    position: relative;
+    width: 66px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0; padding: 0; border: 0;
+}
+
 #black-1st-nav {  }
 #black-2nd-nav {
     margin: 0 0 0 auto;
@@ -37,17 +53,55 @@ ul { display: flex; margin: 0; list-style-type: none; }
 #white-nav { display: flex; align-content: center; }
 
 #search-icon {
-    background-color: green;
+    background-color: #FFFFFF;
     width: 48px;
     height: 48px;
     margin: 0 0 0 auto;
+    border: 0;
+    border-left: 1px solid #eee;
+    display: block;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#icon {
+    display: block;
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+    background-size: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+    background-position: -848px -848px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    opacity: .25;
 }
 
 #hamburger {
     display: none;
-    background-color: blue;
+    background-color: #FFFFFF;
     width: 48px;
     height: 48px;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+    border-left: 1px solid #eee;
+}
+
+span {
+    background-color: #f42;
+    display: block;
+    height: 2px;
+    left:14px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #black-header a {
@@ -85,11 +139,15 @@ ul { display: flex; margin: 0; list-style-type: none; }
 }
 
 @media (max-width: 1023px) {
-    #white-header li { /*padding-left: 20px;*/ }    
+    #white-header li {
+        padding-right: 10px;
+        padding-left: 10px;    
+    }    
 
     #TNW-small {
         display: block;
         height: 80px; 
+        padding: 32px 20px;
     }
     header {
         grid-template-areas:
@@ -99,7 +157,10 @@ ul { display: flex; margin: 0; list-style-type: none; }
 }
 
 @media (max-width: 767px) {
-    #TNW-small { height: 48px; }
+    #TNW-small {
+        height: 48px;
+        padding: 16px 20px;
+    }
     #hamburger { display: block; }
     #black-header { display: none; }
     #white-nav { display: none; }
