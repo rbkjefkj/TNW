@@ -172,4 +172,37 @@ span {
             "red white";
     }
 }
+/*HEADER IS FINISHED HERE ================================================================*/
+
+#section-1 {
+    /*display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: */
+}
+
+#section-1 {
+    height: 75vh;
+    max-height: 560px;
+}
+
+#section-1:first-child {
+    height: 100%;
+    width: 66.66666%;
+}
+
+#section-1:second-child, #section-1:third-child {
+    height: 50%;
+    width: 33.33333%;
+}
+
+@media (min-width: 1024px) {
+    #section-1 {
+        height: 75vh;
+        max-height: 560px;
+    }
+}
+
+
+
+
 
