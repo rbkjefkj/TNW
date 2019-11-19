@@ -234,13 +234,14 @@ main { height: auto; }
 
 @media (max-width: 767px) {
 	#section-1 {
-	/*height:
-    max-height: */
+	height: min-content;
+	max-height: max-content;
     grid-template-columns: auto;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: 
         "first" "second";
 	}
+	#anna, #cecilia, #denise { min-height: 30vh; }
 }
 
 
