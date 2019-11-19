@@ -172,28 +172,58 @@ span {
             "red white";
     }
 }
-/*HEADER IS FINISHED HERE ================================================================*/
-
-#section-1 {
-    /*display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: */
-}
+/*HEADER IS FINISHED HERE =================================================================================================================================*/
+main { height: auto; }
 
 #section-1 {
     height: 75vh;
     max-height: 560px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "first second";
+    grid-gap: 8px;
 }
 
-#section-1:first-child {
-    height: 100%;
-    width: 66.66666%;
+#section-1 #anna/*#first*/ {
+    grid-area: first;
+    background-color: cornsilk;
 }
 
-#section-1:second-child, #section-1:third-child {
-    height: 50%;
-    width: 33.33333%;
+#section-1 #beta {
+    grid-area: second;
+    background-color: white;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "frstSmaller" "scndSmaller";    
 }
+
+#cecilia { grid-area: frstSmaller; background-color: fuchsia;}
+#denise { grid-area: scndSmaller; background-color: salmon;}
+
+/*#section-1 article img {
+    width: 100%;
+}
+
+#section-1 div {
+    /*box-sizing: border-box;
+    width: auto; /*100% doesnt work
+    grid-area: second;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: "frstSmaller" "scndSmaller";
+}
+
+#scnd { grid-area: frstSmaller; }
+#thrd { grid-area: scndSmaller; }*/
 
 @media (min-width: 1024px) {
     #section-1 {
@@ -201,7 +231,6 @@ span {
         max-height: 560px;
     }
 }
-
 
 
 
