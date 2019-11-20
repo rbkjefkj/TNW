@@ -207,24 +207,6 @@ main { height: auto; }
 #cecilia { grid-area: frstSmaller; background-color: fuchsia;}
 #denise { grid-area: scndSmaller; background-color: salmon;}
 
-/*#section-1 article img {
-    width: 100%;
-}
-
-#section-1 div {
-    /*box-sizing: border-box;
-    width: auto; /*100% doesnt work
-    grid-area: second;
-    display: grid;
-    grid-gap: 8px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-area: "frstSmaller" "scndSmaller";
-}
-
-#scnd { grid-area: frstSmaller; }
-#thrd { grid-area: scndSmaller; }*/
-
 @media (min-width: 1024px) {
     #section-1 {
         height: 75vh;
@@ -234,7 +216,7 @@ main { height: auto; }
 
 @media (max-width: 767px) {
 	#section-1 {
-	height: min-content;
+	min-height: min-content;
 	max-height: max-content;
     grid-template-columns: auto;
     grid-template-rows: 1fr 2fr;
@@ -243,6 +225,64 @@ main { height: auto; }
 	}
 	#anna, #cecilia, #denise { min-height: 30vh; }
 }
+/*SECTION 2 'LATEST' BEGINS HERE.==========================================================================================================================*/
+#wrapper {
+	margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: block;
+    /*background-color: purple;*/
+}
+
+#section-2 {
+	margin-bottom: 4em; /*later changes to 3em*/
+	padding-top: 12px;
+	box-sizing: border-box;
+	background-color: orange;
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 
+#latest-news {
+	font-size: 28px; /*later becomes 14px??*/
+	font-weight: 600;
+	margin-top: 50px;
+	margin-bottom: 0;
+	color: #f42;
+	font-family: 'Righteous', cursive;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+}
+
+.c {
+	flex-basis: 25%;
+	box-sizing: border-box;
+	padding: 12px;
+	height: auto;
+	max-width: 25%;
+	
+}
+
+@media(max-width: 1023px) {
+	.c {
+		flex-basis: 33.3333333333%;
+		max-width: 33.3333333333%;
+	}
+}
+
+#section-2 img {
+	width: 100%;
+}
+
+@media(max-width: 767px) {
+	.c {
+		flex-basis: 100%;
+    	max-width: 100%;
+	}
+	#section-2 img {
+		width: 75px;
+		height: 75px;
+	}	
+}
