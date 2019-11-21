@@ -316,3 +316,88 @@ main { height: auto; }
         padding-left: 12px;
     }
 }
+
+/*SECTION 3: LATEST FUNDING ROUNDS STARTS HERE =============================================*/
+#section-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#section-3 header {
+    display: flex;
+    width: 100%;
+}
+
+#section-3 #content-divs div {
+    height: 245.8px;
+    flex-basis: 25%;
+    padding: 12px;
+    background-color: cornsilk;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+#content-divs {
+    margin: -12px;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+#doThings {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+#doThings h3 {
+    color: #ff4422;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 11.5px;
+    padding-right: 11.5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+#needs-borders {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+#section-3 header {
+    margin-bottom: 24px;
+}
+
+header h2 {
+    color: #ff4422;
+    padding: 0; 
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+}
+
+#doThings #no-right-padding { padding-right: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
