@@ -1,6 +1,6 @@
 body { margin: 0; }
 
-header {
+#frst-header {
     display: grid;
     grid-template-columns: 106px auto; 
     grid-template-rows: auto auto; /*auto makes row height fit the row's content*/       
@@ -149,7 +149,7 @@ span {
         height: 80px; 
         padding: 32px 20px;
     }
-    header {
+    #frst-header {
         grid-template-areas:
             "red black"
             "red white";
@@ -164,7 +164,7 @@ span {
     #hamburger { display: block; }
     #black-header { display: none; }
     #white-nav { display: none; }
-    header {
+    #frst-header {
         display: grid;
         grid-template-columns: 106px auto;
         grid-template-rows: auto;
@@ -406,6 +406,7 @@ main { height: auto; }
     #needs-borders { border: 0; }
     #header-3 { flex-direction: column; }
 }
+
 /*FOURTH SECTION OF SECTIONS BEGINS HERE===================================================================================*/
 #section-4-container {
     display: flex;
@@ -451,13 +452,66 @@ main { height: auto; }
     }
 }
 
+/*FIFTH SECTION ABOUT DEALS BEGINS=================================================================================================================================================*/
+#deals-header {
+    margin-bottom: 24px;
+    display: flex;
+}
 
+#deals-header h2 {
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+    color: #ff4422;     
+    padding: 0;
+}
 
+#deals-header h3 {
+    color: #f42;
+    margin: 0 0 0 auto;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 18px;
+}
 
+#container4otherdivs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+    margin-bottom: 3em; /*includes empty ad space*/
+}
 
+.w-padding {
+    padding: 12px;
+    box-sizing: border-box;
+    width: 269.990px;
+    height: 275.423px;
+    flex-basis: 25%;
+    max-width: 25%;
+}
 
+.content-container {
+    width: 100%;
+    background-color: lightgreen;
+    height: 100%;
+}
 
+@media(max-width: 1023px) {
+    .w-padding {
+        flex-basis: 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+}
 
+@media(max-width: 767px) {
+    .w-padding {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
 
 
 
