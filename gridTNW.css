@@ -341,7 +341,6 @@ main { height: auto; }
 
 .content-here {
     background-color: cornsilk;
-    border: 1px solid red;
     box-sizing: border-box;
     height: 100%;
 }
@@ -433,7 +432,6 @@ main { height: auto; }
 
 .just4clarity-remove-l8r {
     background-color: mistyrose;
-    border: 1px solid purple;
     height: 100%;
 }
 
@@ -512,9 +510,65 @@ main { height: auto; }
         max-width: 100%;
     }
 }
+/*FOOTER========================================================================================================================*/
+footer {
+    text-align: center;
+}
 
+#footer-links {
+    background: #131313;
+    padding: 3em 0 2em;
+}
 
+#footer-links-social {
+    margin-bottom: 1.5em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
+#footer-links-social li {
+    margin: 0 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333; 
+    padding: 12px;
+}
+
+#footer-links-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-links-menu li {
+    color: #aaa;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: arial;   
+}
+
+#footer-legal {
+    padding: 3em 0;
+    background: #000;
+}
+
+#footer-legal span { color: #aaa; }
+
+#footer-legal img {
+    display: inline-block;
+    height: 9px;
+    margin-right: 1px;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+}
 
 
 
