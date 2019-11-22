@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Shentox';
+    src: url('./Shentox.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ShentoxMedium';
+    src: url('./ShentoxMedium.ttf') format('truetype');
+}
+
 body { margin: 0; }
 
 #frst-header {
@@ -89,7 +99,7 @@ ul { display: flex; margin: 0; list-style-type: none; }
     border-left: 1px solid #eee;
 }
 
-span {
+#hamburger span {
     background-color: #f42;
     display: block;
     height: 2px;
@@ -127,7 +137,7 @@ span {
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 18px;
-    font-family: Arial
+    font-family: 'ShentoxMedium', Fallback, Arial;
     font-weight: 500;
     text-transform: uppercase;
     color: #aaa;
@@ -525,6 +535,7 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 
 #footer-links-social li {
@@ -542,16 +553,18 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 
 #footer-links-menu li {
     color: #aaa;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin: 0 6px;
     display: inline-block;
     font-size: 13px;
     line-height: 24px;
-    font-family: arial;   
+    font-family: 'ShentoxMedium', Fallback, Arial;
+    padding-left: 0;
+    margin: 0 4px;
 }
 
 #footer-legal {
@@ -559,16 +572,63 @@ footer {
     background: #000;
 }
 
-#footer-legal span { color: #aaa; }
+#footer-legal span { color: #aaa; font-family: Arial; }
 
-#footer-legal img {
+.footer-legal-stackTNW {
     display: inline-block;
     height: 9px;
     margin-right: 1px;
     max-width: 100%;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+
+.footer-links-social-icons {
+    height: 16px;
+    width: 16px;
+    display: block;
+    background-size: 1296px 1296px;
+    box-sizing: border-box;   
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+}
+
+#facebook {
+    background-position: -272px -272px;
+}
+#twitter {
+    background-position: -1024px -1024px;
+}
+#youtube {
+    background-position: -1280px -1280px;
+}
+#instagram {
+    background-position: -416px -416px;
+}
+#pinterest {
+    background-position: -672px -672px;
+}
+#feed {
+    background-position: -816px -816px;
+}
+#email {
+    background-position: -576px -576px;
+}
+
+@media(max-width: 767px) {
+    #footer-links-social li { margin: 0 3px; }
+    #footer-legal { display: flex; flex-direction: column; align-content: center; }
+    #footer-links-menu #team { display: none; }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
