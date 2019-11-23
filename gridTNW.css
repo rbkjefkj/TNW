@@ -365,13 +365,11 @@ main { height: auto; }
 }
 /*SECTION 2 'LATEST' BEGINS HERE.==========================================================================================================================*/
 #wrapper {
-    border: 1px solid black;
 	margin: 0 auto;
     max-width: 1192px;
     padding: 0 20px;
     box-sizing: border-box;
     display: block;
-    /*background-color: purple;*/
 }
 
 #section-2 {
@@ -478,10 +476,128 @@ main { height: auto; }
 }
 
 .content-here {
-    background-color: cornsilk;
+    background-color: rgba(255,68,34,.03);
     box-sizing: border-box;
     height: 100%;
 }
+
+.first-half { position: relative; } /*IS THIS THE CORRECT PLACE?*/
+
+.funding-images {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    margin: 10.6666666667px;
+}
+
+.funding-title {
+    font-family: Avalon;
+    line-height: 1;
+    background: #f42;
+    color: white;
+    padding: 10.6666666667px 16px 10.6666666667px 84px;
+    margin: 0 !important;
+    font-size: 18px !important;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.seriesM {
+    box-sizing: border-box;
+    padding: 10.6666666667px 16px 10.6666666667px 84px;
+    color: #000;
+    background: rgba(255,68,34,.08);
+    margin: 0;       
+}
+
+.seriesM h4 {
+    font-size: 18px;
+    margin: 0 !important;
+    font-family: Avalon;
+    line-height: 1;    
+    padding: 0;
+    margin: 0;
+}
+
+.seriesM h5 {
+    opacity: .5;
+    font-size: 12px;
+    font-family: Shentox;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.content-here .third {
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.third a {
+    padding-left: 2em;
+    position: relative;
+    font-size: 13px;
+    color: #555;
+    margin-right: 1em;
+    display: block;
+    line-height: 22px;  
+    box-sizing: border-box;
+    font-family: Arial; 
+}
+
+.briefcase-icon {
+    position: absolute;
+    top: .2em;
+    left: 0;
+    opacity: .9;
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") no-repeat;
+    background-position: -48px -48px;
+    display: block;
+    background-size: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+}
+
+.content-here .fourth {
+    margin-top: 0;
+    border-top: 1px solid rgba(255,68,34,.25);    
+    font-size: 13px;
+    line-height: 20px;
+    padding: 16px;
+    padding-top: 10px;
+    list-style: none;
+    box-sizing: border-box;
+    display: block;
+    color: #aaa;
+}
+
+.content-here .fourth li {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.content-here .fourth li a {
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.content-here .fourth li a span { color: #aaa; }
 
 #content-divs {
     display: flex;
