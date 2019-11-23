@@ -473,12 +473,18 @@ main { height: auto; }
     flex-basis: 25%;
     padding: 12px;
     max-width: 25%;
+    position: relative;
 }
 
 .content-here {
     background-color: rgba(255,68,34,.03);
     box-sizing: border-box;
     height: 100%;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    top: 12px;
 }
 
 .first-half { position: relative; } /*IS THIS THE CORRECT PLACE?*/
@@ -506,7 +512,7 @@ main { height: auto; }
     padding: 10.6666666667px 16px 10.6666666667px 84px;
     margin: 0 !important;
     font-size: 18px !important;
-    white-space: no-wrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
@@ -523,11 +529,11 @@ main { height: auto; }
 
 .seriesM h4 {
     font-size: 18px;
-    margin: 0 !important;
     font-family: Avalon;
     line-height: 1;    
     padding: 0;
     margin: 0;
+    margin-bottom: 2px; 
 }
 
 .seriesM h5 {
@@ -555,6 +561,22 @@ main { height: auto; }
     line-height: 22px;  
     box-sizing: border-box;
     font-family: Arial; 
+}
+
+#needs-margin { margin-bottom: .5em; }
+
+.pricetag-icon {
+    position: absolute;
+    top: .2em;
+    left: 0;
+    opacity: .9;
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") no-repeat;
+    background-position: -976px -976px;
+    display: block;
+    background-size: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
 }
 
 .briefcase-icon {
