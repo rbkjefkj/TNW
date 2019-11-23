@@ -460,7 +460,10 @@ main { height: auto; }
     flex-direction: column;
     margin: -12px;
     margin-bottom: 4em;
+    height: 266.587px;
 }
+
+.content-divs {  }
 
 #header-3 {
     display: flex;
@@ -469,17 +472,17 @@ main { height: auto; }
 }
 
 #section-3 #content-divs .w-pad {
-    height: 245.8px;
     flex-basis: 25%;
     padding: 12px;
     max-width: 25%;
     position: relative;
+    height: 290.587px;
 }
 
 .content-here {
     background-color: rgba(255,68,34,.03);
     box-sizing: border-box;
-    height: 100%;
+    height: 266.587px;
     position: absolute;
     bottom: 12px;
     left: 12px;
@@ -663,19 +666,26 @@ main { height: auto; }
     #section-3 #content-divs .w-pad {
         flex-basis: 33.3333333333%;
         max-width: 33.3333333333%;
+        padding: 10px;
     }
     #header-3 { flex-direction: column; }
     #doThings { margin:0; }
     #doThings #no-Lpadding { padding-left: 0; }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 767px) { /*THIS WHOLE QUERY IS A BAD HACK WITH PX. MUST REDO LATER, UNFORTUNATELY.*/
     #invisibilify { display: none; }
-    #content-divs { flex-direction: column; }
+    #content-divs { flex-direction: column; height: 696.889px; }
+    #section-3 { height: 680.889px; }
     #section-3 #content-divs .w-pad {
         flex-basis: 100%;
         max-width: 100%;
+        padding: 8px;
     }
+    #shortest { height: 201.635px; }
+    #medium { height: 219.313px; }
+    #tallest { height: 229.649px; }    
+
     #doThings { flex-direction: column; margin: 0; }
     #doThings h3 { padding: 0; }
     #needs-borders { border: 0; }
