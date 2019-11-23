@@ -8,6 +8,12 @@
     src: url('./ShentoxMedium.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Avalon';
+    src: url('./Avalon_Bold.ttf') format('truetype');
+}
+
+
 body { margin: 0; }
 
 #frst-header {
@@ -190,7 +196,6 @@ main { height: auto; }
     max-height: 560px;
     box-sizing: border-box;
     padding: 8px;
-    background-color: red;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
@@ -204,7 +209,7 @@ main { height: auto; }
 #section-1 #anna/*#first*/ { /*DO NOT TOUCH*/
     grid-area: first;
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Snag_63b3942-796x404.png");
-    background-color: orange;
+    background-color: red;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -234,6 +239,82 @@ main { height: auto; }
     width: 100%; /*isn't visible wo this*/
     z-index: 10;
 }
+
+#date {
+    position: absolute;
+    color: white;
+    right:24px;
+    top: 16px;
+    display: block;
+    font-family: Arial;
+}
+
+.cover-header {
+    padding: 20px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.cover-section {
+    font-family: Shentox, Fallback, Arial;
+    color: white;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 0;
+}
+
+.cover-title {
+    font-size: 56px;
+    line-height: 1;
+    color: white;
+    margin-bottom: .25em;
+    margin-top: 0;
+    font-weight: 700;
+    font-family: Avalon;
+    letter-spacing: -.015em;
+}
+
+.cover-byline { padding-left: 0; }
+
+.cover-byline li {
+    display: inline-block;
+    color: hsla(0,0%,100%,.6);
+    font-size: 12px;
+    font-family: Arial;
+}
+
+#clock-icon {
+    margin-right: 4px;
+    opacity: .6;
+    float: left;  
+    display: block;
+    background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
+    background-position: -160px -160px;
+    background-size: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+}
+
+#sharing-icon {
+    margin-right: 4px;
+    opacity: .6;
+    float: left;  
+    display: block;
+    background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
+    background-position: -912px -912px;
+    background-size: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+}
+
+.w-margin { margin-left: 6px; }
 
 #section-1 #beta {
     grid-area: second;
