@@ -701,25 +701,108 @@ main { height: auto; }
 }
 
 .topic-sections {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    height: 678px;
     flex-basis: 33.33333333333333333333%;
     max-width: 33.33333333333333333333%;  
     padding: 12px;
     margin-bottom: 24px;
+    border: solid .5px black;
 }
 
 .topic-sections h2 {
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;/*'Righteous', cursive;*/
+    margin-bottom: 14px;
+    font-size: 28px;
+    line-height: 1.1;
+    font-family: 'Avalon';
     font-weight: 600;
+    letter-spacing: -.015em;
     color: #ff4422;      
 }
 
-.just4clarity-remove-l8r {
-    background-color: mistyrose;
-    height: 100%;
+.topic-sections .article1 {
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2px;
+    background: #f42;
 }
+
+.topic-sections .article2 {
+    display: flex;
+    background-color: rgba(255,68,34,.06);
+    box-sizing: border-box;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.topic-sections .article2 header {
+    flex: 1;
+    overflow: hidden;
+    padding: 0;
+    padding-right: 14px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.topic-sections .article2 header h5 {
+    margin: 0;
+    color: #f42;
+    font-size: 13px;
+    font-family: Shentox;
+    letter-spacing: .04em;
+    line-height: 1.5;
+}
+
+.topic-sections .article2 header h4 {
+    margin: 0;
+    max-height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-size: 14px;
+    color: #f42;
+    line-height: 1.25;
+    font-weight: bold;
+    font-family: Avalon;
+}
+
+.topic-sections .article2 a {
+    flex: 0 0 96px;
+    background-position: 50%;
+    background-size: cover;
+    height: 96px;
+    width: 96px;
+    background: #f42;
+}
+
+.topic-sections ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+
+.topic-sections li {
+    border-bottom: 1px solid #eee;
+}
+
+.topic-sections ul h4 {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+    padding: 6px 0 6px 0;
+    position: relative;
+    font-family: Arial;
+    font-weight: normal;
+    margin: 0;
+}
+
 
 @media(max-width: 1023px) {
     .topic-sections {
@@ -728,8 +811,7 @@ main { height: auto; }
     }
 }
 
-@media(max-width: 767px) {
-    #section-4-container { flex-direction: column; }  
+@media(max-width: 767px) { 
     .topic-sections {
         flex-basis: 100%;
         max-width: 100%; 
