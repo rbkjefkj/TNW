@@ -848,9 +848,6 @@ main { height: auto; }
 
 .w-padding {
     padding: 12px;
-    box-sizing: border-box;
-    width: 269.990px;
-    height: 275.423px;
     flex-basis: 25%;
     max-width: 25%;
 }
@@ -859,6 +856,50 @@ main { height: auto; }
     width: 100%;
     background-color: lightgreen;
     height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container .main-pic {
+    background: deeppink;
+    background-position: 0 100%;
+    padding-top: 74.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.productNprice h4 {
+    font-family: Avalon;
+    color: #000;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.prices .old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    margin: 0;
+    margin-right: 4px;
+    color: #aaa;
+    font-family: Arial;
+}
+
+.prices .new-price {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    font-family: Arial;
 }
 
 @media(max-width: 1023px) {
